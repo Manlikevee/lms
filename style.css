@@ -630,6 +630,7 @@ letter-spacing: -0.4px;
 }
 .feature .bestimg{
     width: 50%;
+    height: 100%;
 }
 .linesflex{
     display: flex;
