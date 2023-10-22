@@ -699,6 +699,9 @@ letter-spacing: -0.14px;
     .container{
         width: 100%;
     }
+    .sidetwo img{
+        margin-top: 0;
+    }
 
     .whiteme{
         padding: 10px;
