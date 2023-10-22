@@ -662,6 +662,9 @@ letter-spacing: -0.14px;
     .links{
         display: none;
     }
+    .author{
+        display: none;
+    }
     .herosection .container{
         flex-direction: column;
     }
