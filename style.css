@@ -948,7 +948,10 @@ letter-spacing: -0.14px;
 
 }
 }
-
+.deeplinks{
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width: 700px) {
     .container{
         width: 100%;
