@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/LOGO (4).png" alt="">
+            </div>
+            <div class="links" id="middlelinks">
+                <a href="index.html" > Home</a>
+                <a href="" class="activelink">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="">Contact</a>
+                <a href="students.html">Become an Instructor</a>
+           
+                    <a href="register.html" class="regs">Register</a>
+                    <a href="login.html" class="signs">Signin</a>
+            
+      
+            </div>
+
+            <div class="create">
+                <a href="register.html" class="reg">Register</a>
+                <a href="login.html" class="sign">Signin</a>
+            </div>
+            <div class="navtoggle" onclick="navtoggler()">
+
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <div id="navlinkovalay" class=""></div>
+    <div class="maincontent">
+
+
+
+    </div>
+
+
+
+
+
+
+  
+    <script>
+        document.getElementById('scrollButtons').addEventListener('click', function () {
+            // Scroll down by 300 pixels smoothly
+            window.scrollTo({
+                top: window.pageYOffset + 600,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
