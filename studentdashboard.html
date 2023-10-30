@@ -13,7 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/4.3.0/introjs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/4.3.0/intro.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -94,7 +97,7 @@
 <div class="toggle"></div>
       </div>   -->
     
-      <div class="swiper-container dashboardtabs">
+      <div class="swiper-container dashboardtabs" id="element1">
         <div class="swiper-wrapper">
             <div class="swiper-slide dtabs acttab" data-tab="dashboard">Dashboard</div>
             <div class="swiper-slide dtabs" data-tab="courses">Courses</div>
@@ -468,6 +471,9 @@
         </div>
       </div>
         <div class="tab-pane" id="teachers">
+     teacher
+        </div>
+        <div class="tab-pane" id="wishlist">
             <div class="dashboarddata">
                 <div class="welcome">
                     Wishlist(10)
@@ -509,15 +515,8 @@
                                 
                                     <div class="coursefoot">
                                         <div class="rating">
-        
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g id="Star">
-                                                    <path id="Vector"
-                                                        d="M8.27569 11.9208L11.4279 13.9179C11.8308 14.1732 12.3311 13.7935 12.2115 13.3232L11.3008 9.74052C11.2752 9.64073 11.2782 9.53573 11.3096 9.4376C11.3409 9.33946 11.3994 9.25218 11.4781 9.18577L14.3049 6.83306C14.6763 6.52392 14.4846 5.90751 14.0074 5.87654L10.3159 5.63696C10.2165 5.62986 10.1211 5.59465 10.0409 5.53545C9.96069 5.47625 9.89896 5.39548 9.86289 5.30255L8.48612 1.83549C8.44869 1.73685 8.38215 1.65194 8.29532 1.59201C8.2085 1.53209 8.1055 1.5 8 1.5C7.89451 1.5 7.79151 1.53209 7.70468 1.59201C7.61786 1.65194 7.55131 1.73685 7.51389 1.83549L6.13712 5.30255C6.10104 5.39548 6.03932 5.47625 5.95912 5.53545C5.87892 5.59465 5.78355 5.62986 5.68412 5.63696L1.99263 5.87654C1.51544 5.90751 1.32373 6.52392 1.69515 6.83306L4.52186 9.18577C4.60063 9.25218 4.65907 9.33946 4.69044 9.4376C4.72181 9.53573 4.72485 9.64073 4.6992 9.74052L3.85459 13.063C3.71111 13.6274 4.31143 14.083 4.79495 13.7767L7.72431 11.9208C7.8067 11.8683 7.90234 11.8405 8 11.8405C8.09767 11.8405 8.19331 11.8683 8.27569 11.9208Z"
-                                                        fill="#FD8E1F" />
-                                                </g>
-                                            </svg>
+        <img src="start.svg" alt="">
+                                      
         
                                             5.0
                                         </div>
@@ -530,13 +529,184 @@
                         <div class="price">
                             $120,000.00
                         </div>
-                        <div class="action">ebube</div>
+                        <div class="action">            <div class="create">
+                            <a href="" class="reg">buy now</a>
+                            <a href="" class="sign">Add to Cart</a>
+                        </div></div>
+                    </div>
+                    <div class="divtableflex">
+                        <div class="course">
+                            <div class="feature">
+                                <div class="bestimg">
+                                    <img src="https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                                <div class="besttitle">
+                                    <h3 class="coursetitle">
+                                        Machine Learning A-Z™: Hands-On Python & R In Data...
+                                    </h3>
+        <div class="linesflex">
+            <div class="line"></div>
+                                    <div class="coursedetail">
+                                 
+                                        <div class="author">
+                                            <ion-icon name="person-outline" style="color: #564FFD;"></ion-icon>        Kevin Gilbert
+                                        </div>
+                        
+                              
+                            
+                                    </div>
+        </div>
+                                
+                                    <div class="coursefoot">
+                                        <div class="rating">
+        <img src="start.svg" alt="">
+                                      
+        
+                                            5.0
+                                        </div>
+                                        <div class="enrolled">265.7K</div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <div class="price">
+                            $120,000.00
+                        </div>
+                        <div class="action">            <div class="create">
+                            <a href="" class="reg">buy now</a>
+                            <a href="" class="sign">Add to Cart</a>
+                        </div></div>
                     </div>
                 </div>
                 </div>
+
         </div>
-        <div class="tab-pane" id="wishlist">Wishlist content goes here.</div>
-        <div class="tab-pane" id="history">Purchase History content goes here.</div>
+        <div class="tab-pane" id="history">
+            <div class="accordion">
+                <div class="accordion-tab">
+                    <div class="tab-header">
+                        <div class="tabhead">
+                            1st Septembar, 2021 at 11:30 PM
+            
+                        </div>
+                        <div class="tabfoot">
+                            <div class="ccount"><ion-icon name="play-circle-outline" class="blueicon"></ion-icon>  3 Courses</div>
+                            <div class="cprice"><ion-icon name="card-outline" class="orangeicon"></ion-icon> $120.00</div>
+                            <div class="ctype"><ion-icon name="cash-outline" class="greenicon"></ion-icon> Credit Card</div>
+                        </div>
+            
+                       </div>
+                    <div class="tab-content">
+
+                        <div class="divttable">
+                            <div class="divtableflex">
+                                <div class="course">
+                                    Course
+                                </div>
+                                <div class="prices">
+                                  Price
+                                </div>
+                        
+                            </div>
+                      <div class="divtableflex">
+                                <div class="course">
+                                    <div class="feature">
+                                        <div class="bestimg">
+                                            <img src="https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="">
+                                        </div>
+                                        <div class="besttitle">
+                                            <h3 class="coursetitle">
+                                                Machine Learning A-Z™: Hands-On Python & R In Data...
+                                            </h3>
+                <div class="linesflex">
+                    <div class="line"></div>
+                                            <div class="coursedetail">
+                                         
+                                                <div class="author">
+                                                    <ion-icon name="person-outline" style="color: #564FFD;"></ion-icon>        Kevin Gilbert
+                                                </div>
+                                
+                                      
+                                    
+                                            </div>
+                </div>
+                                        
+                                            <div class="coursefoot">
+                                                <div class="rating">
+                <img src="start.svg" alt="">
+                                              
+                
+                                                    5.0
+                                                </div>
+                                                <div class="enrolled">265.7K</div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    $120,000.00
+                                </div>
+                            </div>
+                            <div class="divtableflex">
+                                <div class="course">
+                                    <div class="feature">
+                                        <div class="bestimg">
+                                            <img src="https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="">
+                                        </div>
+                                        <div class="besttitle">
+                                            <h3 class="coursetitle">
+                                                Machine Learning A-Z™: Hands-On Python & R In Data...
+                                            </h3>
+                <div class="linesflex">
+                    <div class="line"></div>
+                                            <div class="coursedetail">
+                                         
+                                                <div class="author">
+                                                    <ion-icon name="person-outline" style="color: #564FFD;"></ion-icon>        Kevin Gilbert
+                                                </div>
+                                
+                                      
+                                    
+                                            </div>
+                </div>
+                                        
+                                            <div class="coursefoot">
+                                                <div class="rating">
+                <img src="start.svg" alt="">
+                                              
+                
+                                                    5.0
+                                                </div>
+                                                <div class="enrolled">265.7K</div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    $120,000.00
+                                </div>
+  
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="accordion-tab">
+                    <div class="tab-header">Tab 2</div>
+                    <div class="tab-content">Content for Tab 2</div>
+                </div>
+                <div class="accordion-tab">
+                    <div class="tab-header">Tab 3</div>
+                    <div class="tab-content">Content for Tab 3</div>
+                </div>
+            </div>
+        </div>
         <div class="tab-pane" id="settings">Settings content goes here.</div>
      </div>
 </div>
@@ -596,7 +766,27 @@
     </div>
 </footer>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+     var tabs = document.querySelectorAll(".accordion-tab");
+ 
+     tabs[0].querySelector(".tab-content").classList.add("active");
+ 
+     tabs.forEach(function(tab) {
+         var header = tab.querySelector(".tab-header");
+         var content = tab.querySelector(".tab-content");
+ 
+         header.addEventListener("click", function() {
+             tabs.forEach(function(t) {
+                 t.querySelector(".tab-content").classList.remove("active");
+             });
+ 
+             content.classList.toggle("active");
+         });
+     });
+ });
+ 
+ </script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
     var tabs = document.querySelectorAll(".dtabs");
@@ -689,6 +879,31 @@
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+    var hasCompletedTour = localStorage.getItem("hasCompletedTour");
+var intro = introJs();
+
+intro.setOptions({
+    steps: [
+        {
+            element: "#element1",
+            intro: "On Mobile Swipe To Navigate To Various Sections, On Desktop Click To Navigate",
+            position: "right",
+        },
+
+        // Add more steps as needed
+    ],
+});
+
+  // Call the function when the page is fully loaded
+  window.addEventListener("load", function() {
+    intro.start();
+
+  });
+
+</script>
 </body>
 
 </html>
