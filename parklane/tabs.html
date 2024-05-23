@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *, body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .accordion-tab {
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.tab-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 4px;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+    max-height: fit-content; /* Adjust the maximum height as needed */
+}
+.accordion{
+    width: 100%;
+}
+
+    </style>
+<div class="accordion">
+    <div class="accordion-tab">
+        <div class="tab-header">
+            <div class="tabhead">
+                1st Septembar, 2021 at 11:30 PM
+
+            </div>
+            <div class="tabfoot">
+                <div class="ccount">3 Courses</div>
+                <div class="cprice"> $120.00</div>
+                <div class="ctype">Credit Card</div>
+            </div>
+
+           </div>
+        <div class="tab-content">Content for Tab 1</div>
+    </div>
+    <div class="accordion-tab">
+        <div class="tab-header">Tab 2</div>
+        <div class="tab-content">Content for Tab 2</div>
+    </div>
+    <div class="accordion-tab">
+        <div class="tab-header">Tab 3</div>
+        <div class="tab-content">Content for Tab 3</div>
+    </div>
+</div>
+
+
+    
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.querySelectorAll(".accordion-tab");
+
+    tabs[0].querySelector(".tab-content").classList.add("active");
+
+    tabs.forEach(function(tab) {
+        var header = tab.querySelector(".tab-header");
+        var content = tab.querySelector(".tab-content");
+
+        header.addEventListener("click", function() {
+            tabs.forEach(function(t) {
+                t.querySelector(".tab-content").classList.remove("active");
+            });
+
+            content.classList.toggle("active");
+        });
+    });
+});
+
+</script>
+</body>
+</html>
